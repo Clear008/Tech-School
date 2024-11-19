@@ -1,0 +1,182 @@
+.navbar {
+    background-color: #1a1a1a;
+    color: rgb(130, 203, 227);
+    padding: 30px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+    justify-content: center;
+}
+
+.navbar-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: #ff9800; 
+}
+
+/* Optional: Center search form */
+.navbar .d-flex {
+    margin-left: auto;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Carousel styles */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Card section styles */
+.container {
+    max-width: 100% !important; /* Make container full width */
+    padding: 0 50px; /* Add padding on sides */
+}
+
+.container .row {
+    margin: 50px 0;
+    width: 100%;
+}
+
+/* Combined card styles */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    margin: 0 15px 30px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 400px; /* Increased height */
+    width: 100%;
+}
+
+/* Team section styles */
+#team {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+#team .container {
+    max-width: 100% !important;
+}
+
+#team .row {
+    margin: 0;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#team .col-md-4 {
+    padding: 20px;
+    flex: 0 0 30%; /* Make team members take up equal space */
+}
+
+#team img {
+    border: 3px solid #ff9800;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+    width: 300px; /* Increased size */
+    height: 300px; /* Increased size */
+}
+
+#team img:hover {
+    transform: scale(1.1);
+    border-color: #333;
+}
+
+#team h5 {
+    font-size: 1.8rem; /* Increased size */
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+#team p {
+    font-size: 1.2rem; /* Increased size */
+    color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    #team .row {
+        padding: 0 20px;
+    }
+    
+    #team .col-md-4 {
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+    }
+    
+    .card-img-top {
+        height: 300px;
+    }
+}
+
+/* Footer styles remain the same */
+.footer h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 25px 0 25px;
+    color: #ff9800;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #dddddd;
+}
+
+.footer a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
