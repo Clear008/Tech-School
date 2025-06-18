@@ -58,7 +58,7 @@ Or use a local server:
 python -m http.server 8000
 
 Then visit http://localhost:8000
-
+or visit the website here : https://tech-school-pi.vercel.app/
 ### 📱 Responsive Design
 The website is fully responsive and optimized for:
 
